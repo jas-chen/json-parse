@@ -1,0 +1,43 @@
+{
+  "name": "json-parse",
+  "private": true,
+  "displayName": "json-parse",
+  "description": "Syntax highlighting for JSON.parse(tagged template strings)",
+  "version": "0.1.0",
+  "publisher": "Jas Chen",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/jas-chen/json-parse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jas-chen/json-parse/issues"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "json",
+    "javascript"
+  ],
+  "engines": {
+    "vscode": "^1.29.0"
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx"
+        ],
+        "scopeName": "inline.json-parse",
+        "path": "./syntaxes/json-parse.json",
+        "embeddedLanguages": {
+          "source.json": "json"
+        }
+      }
+    ]
+  }
+}

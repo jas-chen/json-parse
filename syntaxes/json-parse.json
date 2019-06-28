@@ -1,0 +1,44 @@
+{
+  "fileTypes": [],
+  "injectionSelector": "L:source.js -comment -(string -meta.embedded), L:source.jsx -comment -(string -meta.embedded),  L:source.js.jsx -comment -(string -meta.embedded), L:source.ts -comment -(string -meta.embedded), L:source.tsx -comment -(string -meta.embedded)",
+  "patterns": [
+    {
+      "contentName": "source.json",
+      "begin": "(?x)(\\b(?:\\w+\\.)*(?:JSON.parse\\()\\s*)(`)",
+      "beginCaptures": {
+        "1": {
+          "patterns": [
+            {
+              "include": "source.ts#expression"
+            }
+          ]
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "source.ts#expression"
+            }
+          ]
+        },
+        "3": {
+          "name": "punctuation.definition.string.template.begin.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "source.json"
+        }
+      ]
+    }
+  ],
+  "scopeName": "inline.json-parse"
+}
