@@ -4,7 +4,7 @@
   "displayName": "json-parse",
   "description": "Syntax highlighting for JSON.parse(tagged template strings)",
   "version": "0.1.0",
-  "publisher": "Jas Chen",
+  "publisher": "jaschen",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/jas-chen/json-parse.git"
