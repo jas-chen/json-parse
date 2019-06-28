@@ -1,3 +1,5 @@
+[![](https://vsmarketplacebadge.apphb.com/version/jaschen.json-parse.svg)](https://marketplace.visualstudio.com/items?itemName=jaschen.json-parse)
+
 # json-parse
 
 Adds syntax highlighting for `JSON.parse(tagged template strings)`.
