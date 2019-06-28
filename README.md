@@ -10,4 +10,8 @@ const data = { foo: 42, bar: 1337 }; // 🐌
 const data = JSON.parse('{"foo":42,"bar":1337}'); // 🚀
 ```
 
-![](docs/example.gif)
+## Demo
+
+Before vs After
+
+![](docs/demo.png)
